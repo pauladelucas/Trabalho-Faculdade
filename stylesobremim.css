@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* limitando a margin e o padding a zero na raiz do documento todo, se obtém mais liberdade
+para trabalhar os valores em cada elemento */
+
+:root {
+  --cor01:#F0F8FF;
+  --cor02:#87ACCC; 
+  --cor03:#467299; 
+  --cor04:#1B4366;
+}
+/* utlização da variavél para aplicar cores */
+
+body{
+  background-color: var(--cor01);
+ }
+
+h1 {
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+ 
+}
+p {
+color: black;
+width: 50%;
+margin: auto;
+text-align: justify;
+text-indent: 20px;
+font-size: 20px;
+font-family: serif;
+
+}
+
+a {
+  color: black;
+ font-weight: bold;
+  width: 50%;
+  display: block;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+ font-size: 20px;
+font-family: serif;
+
+}
+
+a:hover{
+  color:var(--cor04);
+ font-size: 25px;
+}
+
+footer {
+  background-color: var(--cor02); /* Define a cor de fundo com base na variável --cor02. */
+  text-align: center; /* Centraliza o texto no rodapé. */
+  margin-top: 20px; /* Adiciona uma margem superior de 20px para separação visual. */
+  font-size: 18px;
+}

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor01:#F0F8FF;
+  --cor02:#87ACCC; 
+  --cor03:#467299; 
+  --cor04:#1B4366; 
+  --cor05:#031D33; 
+}
+/* limitando a margin e o padding a zero na raiz do documento todo, se obtém mais liberdade
+para trabalhar os valores em cada elemento */
+/* Define a cor de fundo do corpo do documento com base na variável --cor01. */
+body {
+  background-color: var(--cor01);
+}
+
+/* Define o estilo para cabeçalhos de nível 3 (h3). */
+h3 {
+  color: var(--cor05); /* Define a cor do texto com base na variável --cor05. */
+  margin: auto; /* Centraliza o elemento horizontalmente. */
+  text-align: center; /* Centraliza o texto dentro do elemento. */
+  padding: 20px; /* Adiciona espaço interno de 20px ao redor do elemento. */
+  font-family: 'Courier New', Courier, monospace; /* Define a fonte como monoespaçada. */
+  font-size: 18px; /* Define o tamanho da fonte como 18px. */
+}
+
+/* Define o estilo para parágrafos (p). */
+p {
+  margin: auto; /* Centraliza o elemento horizontalmente. */
+  text-align: center; /* Centraliza o texto dentro do elemento. */
+  font-family: 'Courier New', Courier, monospace; /* Define a fonte como monoespaçada. */
+  font-size: 18px; /* Define o tamanho da fonte como 18px. */
+  text-indent: 18px; /* Aplica um recuo de 18px na primeira linha do parágrafo. */
+}
+
+/* Define o estilo para links (a). */
+a {
+  color: black; /* Define a cor do texto dos links como preta. */
+  font-size: 18px; /* Define o tamanho da fonte como 18px. */
+}
+
+/* Define o estilo dos links quando o cursor do mouse está sobre eles (hover). */
+a:hover {
+  font-size: 20px; /* Aumenta o tamanho da fonte para 20px durante o hover. */
+}
+
+/* Define o estilo para o rodapé (footer) do documento. */
+footer {
+  background-color: var(--cor02); /* Define a cor de fundo com base na variável --cor02. */
+  text-align: center; /* Centraliza o texto no rodapé. */
+  margin-top: 20px; /* Adiciona uma margem superior de 20px para separação visual. */
+}

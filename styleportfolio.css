@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+  margin:0;
+  padding:0; 
+}
+
+:root {
+  --cor01:#F0F8FF;
+  --cor02:#87ACCC; 
+  --cor03:#467299; 
+  --cor04:#1B4366; 
+  --cor05:#031D33; 
+}
+/* usando váriveis fica mais fácil acrescentar valores que serão usado em diversas
+vezes, como por exemplo paletas de cores */
+
+body {
+  background-color: var(--cor02);
+}
+ /* Parametro do flexbox utilizados para dar posicionamento para o menu, neste caso, 
+ colocado a esquerda em linha. */
+ /* em é uma unidade para medidas, cada 1em equivale a 16px */
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 40px;
+  margin-top: 20px;
+  color: var(--cor05);
+  font-size: 20px;
+  }
+ 
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+a:active {
+  background-color: var(--cor03);
+}
+
+footer {
+  background-color: var(--cor03); /* Define a cor de fundo com base na variável --cor02. */
+  text-align: center; /* Centraliza o texto no rodapé. */
+  margin-top:260px; /* Adiciona uma margem superior de 20px para separação visual. */
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de contato</title>
+  <link rel="stylesheet" href="stylecontato.css">
+</head>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formulário de Contato</title>
+</head>
+
+<body>
+  <!-- Título do formulário de contato -->
+  <h1 id="titulo">Link para contato</h1>
+
+  <!-- Formulário de contato -->
+  <form>
+    <!-- Campo para o nome completo -->
+    <div class="campo">
+      <label for="nome">Nome completo:</label>
+      <input type="text" name="nome" id="nome" required>
+    </div>
+
+    <!-- Campo para o email -->
+    <div class="campo">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+    <!-- Campo para perguntas e mensagens -->
+    <div class="campo">
+      <label>Dúvidas, esclarecimentos, oportunidades, me escreva:</label>
+      <textarea rows="10" style="height: 10em; width: 40em;" id="textolivre" name="textolivre" required></textarea>
+      <!-- Área de texto livre com aplicação de CSS direto no elemento pois será utilizado apenas uma única vez -->
+    </div>
+
+    <!-- Botão de envio do formulário -->
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Link para voltar para a página principal -->
+  <a href="index.html">Voltar para página principal.</a>
+  <footer>
+    Desenvolvido por Paula de Almeida.
+  </footer>
+</body>
+
+</html>

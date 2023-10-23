@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor01:#F0F8FF;
+  --cor02:#87ACCC; 
+  --cor03:#467299; 
+  --cor04:#1B4366; 
+  --cor05:#031D33; 
+}
+/* Estilo para o título com id "titulo" */
+#titulo {
+  font-family: sans-serif;
+  color: var(--cor05); /* Define a cor do texto com base na variável --cor05. */
+  margin-left: 8%;
+  margin-bottom: 15px;
+}
+
+/* Estilo para o input com id "name" */
+#name {
+  border: 0;
+}
+
+/* Estilo geral do corpo do documento */
+body {
+  background-color: var(--cor01); /* Define a cor de fundo com base na variável --cor01. */
+  font-family: sans-serif; /* Define a fonte como sans-serif. */
+  font-size: 1em;
+  color: var(--cor03); /* Define a cor do texto com base na variável --cor03. */
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+/* Estilo para input, text e button */
+input, text, button {
+  border-radius: 5px;
+}
+
+/* Estilo para elementos com classe "campo" */
+.campo {
+  margin-bottom: 1em;
+}
+
+/* Estilo para rótulos de campos */
+.campo label {
+  margin-bottom: 0.2em;
+  display: block;
+}
+
+/* Estilo para inputs de texto e email, e textarea dentro da classe "campo" */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+  padding: 0.2em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+/* Estilo para inputs e textarea quando o cursor está sobre eles */
+.campo input:hover,
+.campo textarea:hover {
+  cursor: pointer;
+}
+
+/* Estilo para botões */
+button {
+  font-size: 1.2em;
+  background-color: var(--cor04); /* Define a cor de fundo do botão com base na variável --cor04. */
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: center; /* Talvez seja necessário "margin: auto;" para centralizar horizontalmente. */
+  width: 6em;
+  height: 2em;
+}
+
+/* Estilo para botões quando o cursor está sobre eles (hover) */
+button:hover {
+  background-color: var(--cor02); /* Define a cor de fundo do botão durante o hover com base na variável --cor02. */
+  cursor: pointer;
+}
+
+/* Estilo para links */
+a {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: var(--cor04); /* Define a cor do texto do link com base na variável --cor04. */
+}
+
+/* Estilo para links quando o cursor está sobre eles (hover) */
+a:hover {
+  color: var(--cor02); /* Define a cor do texto do link durante o hover com base na variável --cor02. */
+}
+
+/* Define o estilo para o rodapé (footer) do documento. */
+footer {
+  background-color: var(--cor02); /* Define a cor de fundo com base na variável --cor02. */
+  text-align: center; /* Centraliza o texto no rodapé. */
+  margin-top: 10px;/* Adiciona uma margem superior de 20px para separação visual. */
+  width: 40%;
+  position: fixed;
+  padding: 5px;
+  border-radius: 18px;
+  color: var(--cor04);
+
+
+}
